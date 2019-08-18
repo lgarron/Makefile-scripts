@@ -1,6 +1,6 @@
 # This Makefile is a wrapper around the scripts from `package.json`.
 # https://github.com/lgarron/Makefile-scripts
-# Run `make` once to set up the commands. # this-line-will-be-deleted-during-first-run
+# Run `make first-run` once to set up the commands. # this-line-will-be-deleted-during-first-run
 .PHONY: first-run # this-line-will-be-deleted-during-first-run
 first-run: update-Makefile # this-line-will-be-deleted-during-first-run
 
