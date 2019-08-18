@@ -19,7 +19,7 @@ make build # invokes `npm run build`
 
 ### Updating `Makefile`
 
-If you change the scripts in `package.json`, then run:
+If you add/remove/rename scripts in `package.json`, then run:
 
 ```shell
 make update-Makefile
