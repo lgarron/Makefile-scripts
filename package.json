@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "hello-world": "echo hello-world",
+    "date": "date \"+%Y-%m-%d\""
+  }
+}
