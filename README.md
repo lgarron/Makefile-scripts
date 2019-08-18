@@ -8,7 +8,7 @@ Install in your project and copy your scripts from `package.json` into `Makefile
 
 ```shell
 curl https://raw.githubusercontent.com/lgarron/Makefile-scripts/master/Makefile > Makefile
-make
+make first-run
 ```
 
 Now, you can run:
