@@ -1,8 +1,8 @@
 # This Makefile is a wrapper around the scripts from `package.json`.
 # https://github.com/lgarron/Makefile-scripts
-# Run `make` once to set up the commands. # this-line-will-be-deleted-on-first-run
-.PHONY: first-run # this-line-will-be-deleted-on-first-run
-first-run: update-Makefile # this-line-will-be-deleted-on-first-run
+# Run `make` once to set up the commands. # this-line-will-be-deleted-during-first-run
+.PHONY: first-run # this-line-will-be-deleted-during-first-run
+first-run: update-Makefile # this-line-will-be-deleted-during-first-run
 
 # Note: the first command becomes the default `make` target.
 NPM_COMMANDS = 
@@ -15,5 +15,5 @@ $(NPM_COMMANDS):
 DYNAMIC_NPM_COMMANDS = $(shell cat package.json | npx jq --raw-output ".scripts | keys_unsorted | join(\" \")")
 .PHONY: update-Makefile
 update-Makefile:
-	sed -i "" "/this-line-will-be-deleted-on-first-run/d" Makefile # this-line-will-be-deleted-on-first-run
+	sed -i "" "/this-line-will-be-deleted-during-first-run/d" Makefile # this-line-will-be-deleted-during-first-run
 	sed -i "" "s/^NPM_COMMANDS = .*$$/NPM_COMMANDS = ${DYNAMIC_NPM_COMMANDS}/" Makefile
