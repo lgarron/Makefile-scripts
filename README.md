@@ -33,6 +33,8 @@ I work on projects in a lot of different languages. I always include a `Makefile
 2) It works well enough for my use cases.
 3) The syntax and semantics are likely to be stable long into the future.
 
+`Makefile-scripts` allows me to use modern Javascript "best practices" by writing project scripts in `package.json`, but still run `make` without having to think about the context switch when I move between repositories in different languages.
+
 ## Limitations
 
 If you give your scripts names containing unusual characters (e.g. other than `[A-Za-z0-9-_]`), this might break the `Makefile`.
