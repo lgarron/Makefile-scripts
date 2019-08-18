@@ -17,6 +17,8 @@ Now, you can run:
 make build # invokes `npm run build`
 ```
 
+### Updating `Makefile`
+
 If you change the scripts in `package.json`, then run:
 
 ```shell
@@ -24,6 +26,10 @@ make update-Makefile
 ```
 
 This is necessary because the script names from `package.json` are serialized into the `Makefile` to help shell autocompletion.
+
+#### Dynamic Makefile
+
+If you don't want to have to update your `Makefile` when you edit your set of scripts, copy [`dynamic.Makefile`](./dynamic.Makefile) instead. Your commands will be a tad slower and shell autocompletion might not work, but the functionality should be the same.
 
 ## Why?
 
