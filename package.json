@@ -2,5 +2,6 @@
   "scripts": {
     "hello-world": "echo hello-world",
     "date": "date \"+%Y-%m-%d\""
-  }
+  },
+  "version": "1.1.1"
 }
