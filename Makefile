@@ -18,3 +18,5 @@ UPDATE_MAKEFILE_SED_ARGS = "s/^NPM_COMMANDS = .*$$/NPM_COMMANDS = ${DYNAMIC_NPM_
 update-Makefile:
 	if [ "$(shell uname -s)" = "Darwin" ] ; then sed -i "" ${UPDATE_MAKEFILE_SED_ARGS} ; fi
 	if [ "$(shell uname -s)" != "Darwin" ] ; then sed -i"" ${UPDATE_MAKEFILE_SED_ARGS} ; fi
+	if [ "$(shell uname -s)" = "Darwin" ] ; then sed -i "" "/this-line-will-be-deleted-during-first-run/d" Makefile ; fi # this-line-will-be-deleted-during-first-run
+	if [ "$(shell uname -s)" != "Darwin" ] ; then sed -i"" "/this-line-will-be-deleted-during-first-run/d" Makefile ; fi # this-line-will-be-deleted-during-first-run
