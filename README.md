@@ -36,7 +36,7 @@ If you don't want to have to update your `Makefile` when you edit your set of sc
 I work on projects in a lot of different languages. I always include a `Makefile` because:
 
 1) `make` is available on every platform I might use.
-2) It works well enough for my use cases.
+2) It works well enough for [my use cases](https://github.com/lgarron/Makefile-convention).
 3) The syntax and semantics are likely to be stable long into the future.
 
 `Makefile-scripts` allows me to use modern Javascript "best practices" by writing project scripts in `package.json`, but still run `make` without having to think about the context switch when I move between repositories in different languages.
